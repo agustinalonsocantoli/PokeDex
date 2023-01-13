@@ -1,0 +1,42 @@
+1. Ir a https://create-react-app.dev/docs/adding-typescript/
+
+2. Crear el proyecto npx create-react-app (NOMBRE) --template typescript
+
+3. Npm run start
+
+4. Instalamos rutas npm install react-router-dom
+
+5. Ir a https://react-bootstrap.github.io/
+
+6. npm install react-bootstrap bootstrap
+
+7. Creamos carpeta Pages y la pagina o ruta
+
+8. AGREGAMOS
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const Listado = () => {
+
+    return (
+        <>
+            <h1>Pokemon AnderCode</h1>
+        </>
+    )
+}
+
+export default Listado;
+
+9. y el app.TSX AGREGAMOS
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import Listado from './pages/listado';
+
+    <Router>
+      <div>
+        <Routes>
+          <Route path='/' element={<Listado/>}/>
+        </Routes>
+      </div>
+    </Router>
+
