@@ -11,6 +11,7 @@
 ## Tecnologías 🛠️
 
 - REACT
+- Bootstrap
 
 ## Contribuyendo
 
